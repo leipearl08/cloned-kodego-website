@@ -3,6 +3,10 @@
     margin: auto;
 
     &--padded {
-        padding: 1.25rem;
+    padding: 1.25rem;
+    }
+
+    &--wide {
+    width: 90%;
     }
 }
