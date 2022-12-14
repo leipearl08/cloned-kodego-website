@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(
-    0deg,
+      0deg,
       rgba(40, 66, 202, 0.25),
       rgba(40, 66, 202, 0.25)
     ),
@@ -8,14 +8,26 @@
 
   &__container {
     display: flex;
+    flex-direction: column;
+
+    @mixin atLaptopLarge {
+      flex-direction: row;
+    }
   }
 
   &__text-content {
-    margin-top: 3.125rem;
-    width: 50%;
-    padding: 3.125rem;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
     color: white;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 1.1em;
+
+    @mixin atLaptopLarge {
+      margin-top: 3.175rem;
+      padding: 3.175rem;
+      text-align: left;
+      font-size: 1.2rem;
+    }
   }
 
   &__image-container {
@@ -27,7 +39,12 @@
   }
 
   &__heading {
-    font-size: 2.625rem;
+    /* font-size: 2.625rem; */
+    font-size: 1.75rem;
+
+    @mixin atLaptopLarge {
+      font-size: 2.625rem;
+    }
   }
 
   &__text {
