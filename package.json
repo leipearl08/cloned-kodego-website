@@ -1,8 +1,7 @@
 {
-  "name": "cloned-kodego-website",
+  "name": "kodego-website-clone",
   "version": "1.0.0",
   "description": "",
-
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack",
