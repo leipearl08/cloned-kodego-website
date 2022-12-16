@@ -1,8 +1,8 @@
 .hero {
   background: linear-gradient(
       0deg,
-      rgba(40, 66, 202, 0.25),
-      rgba(40, 66, 202, 0.25)
+      rgba(40, 66, 101, 0.25),
+      rgba(40, 66, 101, 0.25)
     ),
     url("assets/images/banner-background.png");
 
@@ -18,15 +18,15 @@
   &__text-content {
     width: 100%;
     padding: 1rem 1rem 0 1rem;
-    color: white;
+    color: #fff;
     text-align: center;
     font-size: 1.1em;
 
     @mixin atLaptopLarge {
-      margin-top: 3.175rem;
-      padding: 3.175rem;
+      margin-top: 3.125rem;
+      padding: 3.125rem;
       text-align: left;
-      font-size: 1.2rem;
+      font-size: 1.2em;
     }
   }
 
@@ -39,7 +39,6 @@
   }
 
   &__heading {
-    /* font-size: 2.625rem; */
     font-size: 1.75rem;
 
     @mixin atLaptopLarge {
